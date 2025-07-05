@@ -5,7 +5,8 @@ export const coffeeMenu: Coffee[] = [
     id: 1,
     name: "Espresso",
     price: 2.5,
-    image: "https://images.pexels.com/photos/1714950/pexels-photo-1714950.jpeg",
+    image:
+      "https://coffeegeek.com/wp-content/uploads/2019/09/espressohowto-11.jpg",
     description: "Rich, full-bodied shot with a golden crema layer",
     rating: 4.8,
     category: "Classic",
@@ -35,7 +36,7 @@ export const coffeeMenu: Coffee[] = [
     name: "Mocha Deluxe",
     price: 5.0,
     image:
-      "https://130411265.cdn6.editmysite.com/uploads/1/3/0/4/130411265/36KX2QVMAEVHNHZ2TBFCQNQN.jpeg",
+      "https://www.gridlockcoffee.com.au/pub/30b3e6e1/editor-uploaded-image/Mocha.jpg",
     description: "Decadent blend of espresso, chocolate, and whipped cream",
     rating: 4.6,
     category: "Milk Based",
@@ -86,7 +87,7 @@ export const coffeeMenu: Coffee[] = [
     name: "Turkish Coffee",
     price: 2.8,
     image:
-      "https://colombiancoffee.us/cdn/shop/articles/turkish-coffee-a-distinction-of-the-people-of-turkey-209132.png?v=1713377577&width=1500",
+      "https://colombiancoffee.us/cdn/shop/articles/turkish-coffee-a-distinction-of-the-people-of-turkey-209132_15e8ba02-8035-4262-93f4-83aae3ed6526.png?v=1751659690&width=1500",
     description:
       "Finely ground coffee brewed unfiltered for a rich and foamy experience",
     rating: 4.8,
@@ -119,7 +120,7 @@ export const coffeeMenu: Coffee[] = [
     name: "Café au Lait",
     price: 2.8,
     image:
-      "https://www.homegrounds.co/wp-content/uploads/2023/03/cafe-au-lait-.jpeg",
+      "https://images.arla.com/recordid/5BDE13AE-6BE2-4CE2-8A992EA8FFFE63B5/picture.jpg?width=375&height=265&mode=crop&format=webp",
     description:
       "Freshly brewed coffee mixed with steamed milk for a mellow flavor",
     rating: 4.8,

@@ -72,6 +72,18 @@ const Checkout: React.FC<Props> = ({ onSubmit, total }) => {
               <span>${total.toFixed(2)}</span>
             </div>
           </div>
+          <div>
+            <label className="block text-sm font-medium text-gray-700 mb-1">
+              Payment Method
+            </label>
+            <select
+              name="paymentMethod"
+              className="w-full px-3 py-2 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-amber-500"
+            >
+              <option value="credit">Credit Card</option>
+              <option value="debit">ABA</option>
+            </select>
+          </div>
 
           <button
             onClick={handleSubmit}
