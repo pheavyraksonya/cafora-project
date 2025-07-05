@@ -17,8 +17,12 @@ const CoffeeItem: React.FC<Props> = ({ coffee, onAddToCart }) => {
       </div>
 
       <div className="relative h-48 overflow-hidden">
-        <div className="w-full h-full bg-gradient-to-br from-amber-100 to-orange-200 flex items-center justify-center">
-          <Coffee size={64} className="text-amber-600" />
+        <div className="w-full h-full">
+          <img
+            src={coffee.image}
+            alt={coffee.name}
+            className="object-cover w-full h-full"
+          />
         </div>
         <div className="absolute inset-0 bg-black opacity-0 group-hover:opacity-10 transition-opacity duration-300"></div>
       </div>

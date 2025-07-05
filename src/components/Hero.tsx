@@ -11,11 +11,11 @@ const Hero: React.FC = () => {
             Different
           </span>
         </h2>
-        <p className="text-xl text-gray-600 mb-8 max-w-2xl mx-auto">
+        <p className="text-center text-l text-gray-600 mb-8 max-w-2xl mx-auto ">
           Cafora blends rich flavor with quiet luxury. Inspired by aroma and
           elegance, each cup is crafted from premium beans for a smooth, refined
-          coffee experience. It's not just coffee — it's a moment of calm,
-          warmth, and taste.
+          coffee experience. It's not just coffee it's a moment of calm, warmth,
+          and taste.
         </p>
       </div>
     </section>

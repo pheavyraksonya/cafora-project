@@ -1,10 +1,10 @@
 import type { CheckoutInfo } from "../types";
 
 export const handleOrderSubmission = (info: CheckoutInfo, total: number) => {
-  const confirmationMessage = `Order confirmed! 🎉
+  const confirmationMessage = `Your Order confirmed! 🎉
 
 Delivery to: ${info.name}
-Phone: ${info.phone}
+Phone Number: ${info.phone}
 Address: ${info.address}
 Total: $${total.toFixed(2)}
 

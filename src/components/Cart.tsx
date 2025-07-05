@@ -1,11 +1,12 @@
 import React from "react";
-import { Plus, Minus, X, Coffee } from "lucide-react";
+import { Plus, Minus, X, Coffee, Trash2 } from "lucide-react";
 import type { CartItem } from "../types";
 
 interface Props {
   cart: CartItem[];
   onCheckout: () => void;
   onUpdateQuantity: (id: number, quantity: number) => void;
+  onClearCart: () => void; // New prop for clearing all items
   isOpen: boolean;
   onClose: () => void;
 }
@@ -14,10 +15,21 @@ const Cart: React.FC<Props> = ({
   cart,
   onCheckout,
   onUpdateQuantity,
+  onClearCart,
   isOpen,
   onClose,
 }) => {
   const total = cart.reduce((sum, item) => sum + item.price * item.quantity, 0);
+
+  const handleClearCart = () => {
+    if (
+      window.confirm(
+        "Are you sure you want to remove all items from your cart?"
+      )
+    ) {
+      onClearCart();
+    }
+  };
 
   if (!isOpen) return null;
 
@@ -27,12 +39,23 @@ const Cart: React.FC<Props> = ({
         <div className="p-6 border-b border-gray-200">
           <div className="flex items-center justify-between">
             <h2 className="text-2xl font-bold text-gray-900">Your Order</h2>
-            <button
-              onClick={onClose}
-              className="p-2 hover:bg-gray-100 rounded-full transition-colors"
-            >
-              <X size={24} />
-            </button>
+            <div className="flex items-center space-x-2">
+              {cart.length > 0 && (
+                <button
+                  onClick={handleClearCart}
+                  className="p-2 hover:bg-red-50 rounded-full transition-colors text-red-600 hover:text-red-700"
+                  title="Clear all items"
+                >
+                  <Trash2 size={20} />
+                </button>
+              )}
+              <button
+                onClick={onClose}
+                className="p-2 hover:bg-gray-100 rounded-full transition-colors"
+              >
+                <X size={24} />
+              </button>
+            </div>
           </div>
         </div>
 
