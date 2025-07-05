@@ -1,5 +1,5 @@
 import React from "react";
-import { Plus, Coffee } from "lucide-react";
+import { Plus } from "lucide-react";
 import type { Coffee as CoffeeType } from "../types";
 
 interface Props {
